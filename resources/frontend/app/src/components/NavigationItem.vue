@@ -14,11 +14,14 @@ export default {
         },
     },
     computed: {
+        level() {
+            return this.item.depth - 1
+        },
         liClass() {
-            return `nav__item--level-${this.item.depth}`
+            return `nav__item--level-${this.level}`
         },
         aClass() {
-            return `nav__link--level-${this.item.depth}`
+            return `nav__link--level-${this.level}`
         },
     }
 }
