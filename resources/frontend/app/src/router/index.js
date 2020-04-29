@@ -10,6 +10,11 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
+  {
+      path: '/category/:categoryId',
+      name: 'category',
+      component: Home
+  }
 //   {
     // path: '/about',
     // name: 'About',
@@ -23,6 +28,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   base: '/',
+  linkActiveClass: 'nav__link--active',
   routes
 })
 
