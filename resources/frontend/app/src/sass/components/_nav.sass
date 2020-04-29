@@ -1,0 +1,22 @@
+.nav
+    list-style: none
+    padding: 0px
+    margin: 0px
+
+    &__item
+        display: block
+
+    &__link
+        display: block
+        padding: $spacer/2 $spacer $spacer/2 $spacer * 2
+        border: 1px solid $grey-lightest
+        margin-bottom: -1px
+
+        &--active
+            background: $grey-lightest
+
+        &:hover
+            background: $grey-lightest
+
+        &--level-0
+            padding: $spacer/2 $spacer $spacer/2 $spacer
