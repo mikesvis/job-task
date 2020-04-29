@@ -17,7 +17,7 @@ class CategoryResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'depth' => $this->depth,
+            'depth' => $this->depth - 1,
             'parent_id' => $this->parent_id,
         ];
     }
