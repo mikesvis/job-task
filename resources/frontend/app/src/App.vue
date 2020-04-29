@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="columns">
                     <div class="column is-one-quarter">
-                        <navigation v-if="items" :level="level" :id="1" :items="items"></navigation>
+                        <navigation v-if="items" :items="items"></navigation>
                     </div>
                     <div class="column">
                         <router-view />
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue'
+import Navigation from '@/components/Navigation'
 
 export default {
     components: {
@@ -26,8 +26,7 @@ export default {
     },
     data() {
         return {
-            items: [],
-            level: 0
+            items: []
         }
     },
     async mounted() {
