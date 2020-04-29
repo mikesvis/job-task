@@ -15,7 +15,7 @@ export default {
     },
     computed: {
         level() {
-            return this.item.depth + 1
+            return this.item.depth - 1
         },
         liClass() {
             return `nav__item--level-${this.level}`
