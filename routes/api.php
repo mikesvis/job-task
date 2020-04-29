@@ -19,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/test', 'TestController@index');
+
+Route::resource('/category', 'CategoryController');
