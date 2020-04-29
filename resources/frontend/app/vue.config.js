@@ -1,7 +1,8 @@
 module.exports = {
     devServer: {
-        proxy: 'http://job-task.local'
+        proxy: 'http://127.0.0.1:8000'
     },
+    filenameHashing: false,
 
     // output built static files to Laravel's public dir.
     // note the "build" script in package.json needs to be modified as well.

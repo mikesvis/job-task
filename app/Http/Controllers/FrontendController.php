@@ -7,6 +7,6 @@ class FrontendController extends Controller
     // For public application
     public function app()
     {
-        return ['dummy output'];
+        return view('app');
     }
 }
