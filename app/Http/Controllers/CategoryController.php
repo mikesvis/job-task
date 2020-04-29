@@ -15,7 +15,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::withDepth()->get()->toFlatTree();
+        $categories = Category::withDepth()->where('id', '!=', 1)->get()->toFlatTree();
 
         return CategoryResource::collection($categories);
     }
