@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UserSeeder::class);
         $this->call(CategorySeeder::class);
-        factory(Product::class, 100)->create();
+        $this->call(ProductSeeder::class);
     }
 }
